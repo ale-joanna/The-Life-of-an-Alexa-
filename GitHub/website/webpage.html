@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="styles.css">
+  <script src = "myScript.js"></script>
+  <header>
+  <hr>
+  <img src="cherry.gif" alt="cherry"
+  style= "float: left; width:80px;height:70px;">
+  <img src="cherry.gif" alt="cherry"
+  style= "float: right; width:80px;height:70px;">
+  <h1>The Life of an Alexa</h1>
+  <hr>
+</header>
+  <p>
+    <meta charset="utf-8">
+     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+     <title>ArcGIS API for JavaScript Hello World App</title>
+     <style>
+       html, body, #viewDiv {
+         padding: 0;
+         margin: 0;
+         height: 100%;
+         width: 100%;
+       }
+     </style>
+
+     <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/css/main.css">
+     <script src="https://js.arcgis.com/4.12/"></script>
+
+     <script>
+       require([
+         "esri/Map",
+         "esri/views/MapView"
+       ], function(Map, MapView) {
+
+         var map = new Map({
+           basemap: "topo-vector"
+         });
+
+         var view = new MapView({
+           container: "viewDiv",
+           map: map,
+           center: [-118.71511,34.09042],
+           zoom: 11
+         });
+
+       });
+     </script>
+     <style>
+     #div1 {
+       width: 200px;
+       height: 190px;
+       padding: 10px;
+       border: 1px solid #aaaaaa;
+     }
+     </style>
+     <script>
+     function allowDrop(ev) {
+       ev.preventDefault();
+     }
+
+     function drag(ev) {
+       ev.dataTransfer.setData("text", ev.target.id);
+     }
+
+     function drop(ev) {
+       ev.preventDefault();
+       var data = ev.dataTransfer.getData("text");
+       ev.target.appendChild(document.getElementById(data));
+     }
+     </script>
+  </head>
+
+  <body style="background-image:url('pink.jpg');">
+    <p>
+  <h2>  About Me </h2>
+</p>
+    <p>
+    <div>I was born in Mexico and came to the United States at the age of 7 with no clue as to how my life would form but when I started Elementary school I discovered my love for learning. I have two half brothers who live with me  and one half sister who does not, as well as a Shih Tzu named Johnny. I live with my mother, step-father, and two younger brothers. Fast-forward my life and I am currently 17 years old and a rising senior in highschool where I recently discovered my interest in computer science and decided to apply for the Girls Who Code Summer Immersion Program. </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial;}
+
+    /* Style the tab */
+    <p>
+    .tab {
+    overflow: show;
+    border: ;
+    background-color: #ECCEF5;
+    margin-left: 0px;
+    margin-right: 400px;
+    }
+    </p>
+    <p>
+    /* Style the buttons inside the tab */
+    .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px ;
+    transition: 0.3s;
+    font-size: 17px;
+    }
+    </p>
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+    background-color: #B40486;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+    background-color: #B40486;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+    display: none;
+    padding: 2px;
+    border: 1px solid #B40486;
+    border-top: none;
+    }
+    </style>
+    </head>
+    <body>
+
+    <h2></h2>
+    <p></p>
+
+    <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Fact One')">Fact One</button>
+    <button class="tablinks" onclick="openCity(event, 'Fact Two')">Fact Two</button>
+    <button class="tablinks" onclick="openCity(event, 'Fact Three')">Fact Three</button>
+    </div>
+
+    <div id="Fact One" class="tabcontent">
+    <h3>My favorite food is Fettuccine Alfredo.</h3>
+    <img src="alfredo.jpg" alt="alfredo"
+    style= "width:450px;height:315px;">
+
+    </div>
+
+    <div id="Fact Two" class="tabcontent">
+    <h3>My favorite song is Beautiful People by Ed Sheeran.</h3>
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/74yb9E3WY1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+    <div id="Fact Three" class="tabcontent">
+    <h3>My favorite sport is basketball.</h3>
+    <img src="basketball.jpg" alt="basketball"
+    style= "width:450px;height:315px;">
+    </div>
+
+    <script>
+    function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    </script>
+    </p>
+    </p>
+  <h2> Extra Information  </h2>
+    <p>
+    <div>Future aspirations: I am looking forward to graduating high school, applying to colleges, and getting accepted to a college that provides everything I need to successfully complete my bachelors in computer science, specifically software engineering.</div>
+    </p>
+    <p>
+    <div>Interest: Music, piano(<em>occasionally</em>), basketball, movies (<em>Horror, Comedy, Romantic & Action</em>), school, computer science.</div>
+    </p>
+    <p>
+    <div>Personality: Quiet, shy, introverted, calm, funny(<em>very occasionally</em>), determined, motivated, stressful.</div>
+    </p>
+    <p>
+    <div><img src="panda.gif" alt="panda"
+    style= "width:340px;height:240px;"></div>
+   </p>
+
+    <p>
+    <div>Recent Projects:
+    This is the project I completed with a group the first week of GWC. Below is the game!</div>
+    </p>
+    <p>
+    <div><iframe src="https://scratch.mit.edu/projects/317967688/embed" allowtransparency="true" width="340" height="240" frameborder="0" scrolling="no" allowfullscreen></iframe></div>
+    </p>
+    <p>
+    <div>If you want to play the game, just click the link or simply play it from the box above!
+    <a href = "https://scratch.mit.edu/projects/317967688/editor"> Maze Game </a></div>
+      <!--script src="new.js">
+      </script-->
+
+    <p>
+    <div><form>
+    <input type="button" value="The End" onclick="display()"/>
+  </form></div>
+    </p>
+    <footer>
+    <p> Created by Alexa Joanna gonzalez</p>
+    </footer>
+  </body>
+
+  </html>
+<a href = </a>

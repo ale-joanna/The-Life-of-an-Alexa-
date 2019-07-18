@@ -1,0 +1,23 @@
+#header{
+  background-color:teal;
+}
+#font{
+  color: white;
+  font-size:70px;
+  font-family: helvetica;
+}
+#specialedition{
+  font-size:20px;
+}
+#margin{
+  margin-right:135px;
+}
+#footer{
+  font-size:70px;
+  margin-top:200px;
+  margin-bottom:200px;
+}
+#followme{
+  font-size:20px;
+  color:teal;
+}
